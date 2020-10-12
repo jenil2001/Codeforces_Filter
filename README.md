@@ -11,7 +11,7 @@ Codeforces API used for this is: https://codeforces.com/apiHelp/methods#contest.
 
 Problems from codeforces of different ratings can be filtered.
 Enter user1 and user2 to get the list of problems solved by user2 and not solved user1.
-Codeforces API used for this is: https://codeforces.com/apiHelp/methods#user.info
+Codeforces API used for this is: https://codeforces.com/apiHelp/methods#user.status
 
 HTML and CSS template is taken from: https://colorlib.com/wp/template/responsive-table-v1/  and modified as per usage.
 Icon is taken from: https://thenounproject.com/term/html-coding/286321/.

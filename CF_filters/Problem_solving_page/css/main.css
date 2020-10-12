@@ -1,0 +1,304 @@
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../OpenSans/OpenSans-Regular.ttf'); 
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+  font-family: sans-serif;
+
+}
+
+/* ------------------------------------ */
+a {
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.user,#user1,#user2{
+  font-size: 20px;
+  text-align: center;
+  font-family: "Arial Black";
+}
+select { 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  -ms-appearance: none; 
+  appearance: none; 
+  outline: 0; 
+  background: #76D7EA; 
+  border:2px solid black; 
+} 
+.select { 
+  position: relative; 
+  display: block; 
+  line-height: 3; 
+  background: #2C3E50; 
+  overflow: hidden; 
+  border-radius: .25em; 
+} 
+select { 
+  width: 100%; 
+  height: 100%; 
+  margin: 0; 
+  padding-top: 15px;
+  padding-bottom: 15px; 
+  color: black; 
+  font-size: 20px;
+  cursor: pointer; 
+} 
+select::-ms-expand { 
+  display: none; 
+}  
+.select::after { 
+  content: '\25BC'; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  padding: 0 1em; 
+  background: #34495E; 
+  pointer-events: none; 
+} 
+.select:hover::after { 
+  color: #F39C12; 
+} 
+  
+.select::after { 
+  -webkit-transition: .25s all ease; 
+  -o-transition: .25s all ease; 
+  transition: .25s all ease; 
+} 
+option{
+  color: black;
+  font-size: 20px;
+}
+.frm{
+  background: #76D7EA; 
+}
+.problem {
+  background-color: 	#4F86F7; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Arial Black";
+  width: 100%;
+  }
+.problem:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.wrap-table100 {
+  width: 1170px;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #36304a;
+}
+table tbody tr {
+  height: 80px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+
+.table100-head th{
+  font-family: OpenSans-Regular;
+  font-size: 25px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: Arial;
+  font-size: 20px;
+  color:black;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.column1 {
+  width: 300px;
+  padding-left: 40px;
+}
+
+.column2 {
+  width: 100px;
+}
+
+.column3 {
+  width: 245px;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    font-family: Arial;
+    font-size: 20px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Problem";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Rating";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Tags";
+  }
+  
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+
+  tbody tr {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-table100 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

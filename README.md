@@ -1,4 +1,5 @@
-# Codeforces_Filter
+# Codeforces_Filter(Vanilla Javascript Project)
+
 
 There are two pages : 1) Contest Page and 2) Problem Solving Page
 

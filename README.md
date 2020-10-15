@@ -1,4 +1,5 @@
-# Codeforces_Filter
+# Codeforces_Filter(Vanilla Javascript Project)
+
 
 There are two pages : 1) Contest Page and 2) Problem Solving Page
 
@@ -15,3 +16,5 @@ Codeforces API used for this is: https://codeforces.com/apiHelp/methods#user.sta
 
 HTML and CSS template is taken from: https://colorlib.com/wp/template/responsive-table-v1/  and modified as per usage.
 Icon is taken from: https://thenounproject.com/term/html-coding/286321/.
+
+Website Link: https://jenil2001.github.io/Codeforces_Filter/

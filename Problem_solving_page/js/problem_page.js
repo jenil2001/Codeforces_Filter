@@ -7,6 +7,7 @@ fetch(data)
     .then(l=>{
         //console.log(l);
         problem_list.push(...(l.result.problems));
+        //console.log(problem_list);
         problem_list= problem_list.map((problem)=>{
             let obj={
                 name: problem.name,
@@ -23,6 +24,7 @@ let select_rating= document.querySelector('#type');
 let user_filter= document.querySelector('.problem');
 let user1_html= document.querySelector('#user1');
 let user2_html= document.querySelector('#user2');
+let ratings = document.querySelector('.column2');
 function display()
 {
     let type=problem_list;
@@ -60,6 +62,7 @@ async function get_user(user)
         return;
     }
     let data = await response.json();
+
     data = data.result;
     return data;
 }
@@ -102,6 +105,7 @@ function filter_by_user(all_users)
     });
     return filtered;
 }
+
 function user_input()
 {
     get_all_users().then((all_users)=>{
@@ -113,6 +117,19 @@ function user_input()
         alert(message);
     });
 }
-
+function compare( a, b ) {
+  if ( a.rating < b.rating ){
+    return -1;
+  }
+  if ( a.rating > b.rating ){
+    return 1;
+  }
+  return 0;
+}
+function sortByRating(){
+    problem_list.sort(compare)
+    display()
+}
 select_rating.addEventListener('change',display);
 user_filter.addEventListener('click',user_input);
+ratings.addEventListener('click',sortByRating);
